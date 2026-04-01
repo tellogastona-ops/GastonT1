@@ -1,0 +1,109 @@
+:root { 
+    --primary: #2563eb; 
+    --danger: #dc2626; 
+    --success: #22c55e;
+    --bg: #f8fafc;
+    --dark: #1e293b;
+}
+
+body {
+    font-family: system-ui, sans-serif; 
+    background-color: var(--bg); 
+    margin: 0; 
+    color: #1e293b;
+}
+
+header {
+    background: var(--dark); 
+    color: white; 
+    padding: 1.5rem; 
+    text-align: center;
+}
+
+.container { 
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.panel {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    margin-bottom: 2rem;
+}
+
+.form-inline {
+    display: flex;
+    gap: 1rem;
+}
+
+input {
+    padding: 0.6rem;
+    border: 1px solid #cbd5e1; 
+    border-radius: 6px;
+    flex: 1;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.carrito-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.item-carrito {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-bottom: 1px dotted #cbd5e1;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+}
+
+.btn-success { background-color: var(--success); width: 100%; margin-top: 1rem; }
+.btn-danger { background-color: var(--danger); width: 100%; margin-top: 0.5rem; }
+
+#mensaje-usuario {
+    display: none;
+    padding: 1rem;
+    background: #10b981;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+}

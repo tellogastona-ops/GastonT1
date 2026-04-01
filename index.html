@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-Shop Simulador</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Lista de Compras</h1>
+    <header>
+        <h1>Mi Carrito</h1>
+        <div id="mensaje-usuario"></div>
+    </header>
 
-    <button onclick="IniciarPrograma()">Iniciar programa</button>
+    <main class="container">
+        <!-- SECCION ENTRADA -->
+        <section class="panel">
+            <h3>Cargar Producto Personalizado</h3>
+            <form id="form-producto" class="form-inline">
+                <input type="text" id="nombre-input" placeholder="Nombre" required>
+                <input type="number" id="precio-input" placeholder="Precio" required>
+                <button type="submit" id="btn-enviar">Crear y sumar</button>
+            </form>
+        </section>
+
+        <div class="layout">
+            <!-- SECCION PROCESO -->
+            <section class="catalogo-container">
+                <h2>Productos Disponibles</h2>
+                <div id="contenedor-cards" class="grid-cards"></div>
+            </section>
+
+            <!-- SECCION SALIDA -->
+            <aside class="carrito-container">
+                <h2>Tu Carrito</h2>
+                <div id="carrito-items"></div>
+                <div class="carrito-footer">
+                    <p>Total a Pagar: <span id="total-precio">$0</span></p>
+                    <button id="btn-comprar" class="btn-success">Finalizar Compra</button>
+                    <button id="btn-vaciar" class="btn-danger">Vaciar Carrito</button>
+                </div>
+            </aside>
+        </div>
+    </main>
 
     <script src="js/main.js"></script>
 </body>

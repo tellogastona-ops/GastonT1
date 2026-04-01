@@ -1,0 +1,6 @@
+[
+    { "id": 1, "nombre": "Monitor 24'", "precio": 45000 },
+    { "id": 2, "nombre": "Teclado RGB", "precio": 8000 },
+    { "id": 3, "nombre": "Mouse Pro", "precio": 5500 },
+    { "id": 4, "nombre": "Webcam HD", "precio": 12000 }
+]
